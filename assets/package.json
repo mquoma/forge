@@ -6,6 +6,9 @@
     "deploy": "webpack --mode production",
     "watch": "webpack --mode development --watch"
   },
+  "engines": {
+    "node": "11.10.0"
+  },
   "dependencies": {
     "phoenix": "file:../deps/phoenix",
     "phoenix_html": "file:../deps/phoenix_html",
