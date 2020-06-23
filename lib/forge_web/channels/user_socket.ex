@@ -17,6 +17,7 @@ defmodule ForgeWeb.UserSocket do
   # performing token verification on connect.
   @impl true
   def connect(_params, socket, _connect_info) do
+    transport(:websocket, Phoenix.Transports.WebSocket, timeout: 45_000)
     {:ok, socket}
   end
 
