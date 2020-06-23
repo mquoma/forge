@@ -24,6 +24,7 @@ config :forge, Forge.Repo,
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
   ssl: true,
   url: System.get_env("DATABASE_URL")
+
 # ## SSL Support
 #
 # To get SSL working, you will need to add the `https` key
@@ -60,4 +61,4 @@ config :forge, Forge.Repo,
 
 # Finally import the config/prod.secret.exs which loads secrets
 # and configuration from environment variables.
-import_config "prod.secret.exs"
+# import_config "prod.secret.exs"
